@@ -1,0 +1,96 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/*Home Page*/
+header{
+    display: block;
+    height: 30vh;
+    background-image: url(../img/design1_image1.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+header>h1 {
+    color: #F3D22E;
+    text-shadow: black 3px 3px;
+}
+
+.home-title, .about-title, .contact-title {
+    text-align: center;
+    color: white;
+    background-color: black;
+    margin-top: 1vh;
+    padding: 5px;
+}
+
+header>img {
+    position: absolute;
+    left: 80vw;
+    top: 20vh;
+
+    
+}
+
+nav {
+    display: inline-block;
+    vertical-align: top;
+    margin-left: 3vw;
+    margin-top: 3vh;
+}
+
+nav>a {
+    display: block;
+    margin-bottom: 10vh;
+
+}
+
+
+main {
+    display: inline-block;
+    margin-top: 3vh;
+    margin-left: 10vw;
+    
+
+}
+
+.home-info {
+    display: inline-block;
+    vertical-align: top;
+    width: 50vw;
+}
+
+section>p {
+    margin-bottom: 7vh;
+}
+
+.home-figure, .about-figure, .contact-figure {
+    display: inline-block;
+    margin-left: 5vw;
+}
+
+/*About Page*/
+
+.about-info {
+    display: inline-block;
+    width: 50vw;
+    text-align: justify;
+}
+.about-figure {
+    display: inline-block;
+    margin-left: 5vw;
+}
+
+article>p {
+    margin-bottom: 3vh;
+}
+
+/*Contact Page*/
+
+.contact-info {
+    display: inline-block;
+    vertical-align: top;
+    width: 50vw;
+}
