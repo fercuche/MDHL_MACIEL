@@ -14,8 +14,8 @@ header{
 }
 
 header>h1 {
-    color: #F3D22E;
-    text-shadow: black 3px 3px;
+    /*color: #F3D22E;
+    text-shadow: black 3px 3px;*/
 }
 
 .home-title, .about-title, .contact-title {
