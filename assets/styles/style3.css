@@ -1,0 +1,107 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Roboto, Oxygen,sans-serif
+}
+
+header{
+    display: block;
+    height: 30vh;
+    background-image: url(../img/design1_image1.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+header>h1 {
+    text-align: center;
+    text-transform: uppercase;
+    font-size: xxx-large;
+    color: #F3D22E;
+    filter: drop-shadow(4px 4px 8px #999999);
+    text-shadow: red 2px 2px;
+}
+
+.home-title, .about-title, .contact-title {
+    text-align: center;
+    color: white;
+    background-color: rgb(249, 74, 41);
+    padding: 5px;
+}
+
+header>img {
+    position: absolute;
+    left: 45vw;
+    top: 8vh;
+    filter: drop-shadow(4px 4px 8px);
+}
+
+nav {
+    display: block;
+    text-align: center;
+    margin-top: 10px;
+}
+
+nav>a {
+    border: 1px solid #999999;
+    background-color: rgb(214, 19, 85);
+    color: white;
+    margin-left: 5px;
+    padding: 2px 5px 2px 5px;
+    text-decoration: none;
+    box-shadow: 2px 3px rgba(0, 0, 0, 0.5);
+}
+
+a:hover{
+    color: black;
+    background-color: rgb(252, 226, 42);
+}
+
+main {
+    display: inline-block;
+
+    margin-top: 3vh;
+    margin-left: 10vw;
+}
+
+.home-info {
+    display: inline-block;
+    vertical-align: top;
+    margin-top: 20px;
+    width: 50vw;
+}
+
+section>p {
+    margin-bottom: 7vh;
+}
+
+.home-figure, .about-figure, .contact-figure {
+    display: inline-block;
+    margin-left: 5vw;
+}
+
+.about-info {
+    margin-top: 20px;
+    display: inline-block;
+    width: 50vw;
+    text-align: justify;
+}
+
+.about-figure {
+    display: inline-block;
+    margin-left: 5vw;
+}
+
+article>p {
+    margin-bottom: 3vh;
+}
+
+/*Contact Page*/
+
+.contact-info {
+    text-align:left;
+    display: inline-block;
+    margin-top: 20px;
+    vertical-align: top;
+    width: 50vw;
+}
