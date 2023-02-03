@@ -2,11 +2,16 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: Roboto, Oxygen,sans-serif
+    font-family: Roboto, Oxygen, sans-serif
 }
 
-header{
-    display: block;
+header {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: stretch;
+    align-items: center;
+    flex-wrap: nowrap;
     height: 30vh;
     background-image: url(../img/design1_image1.jpg);
     background-size: cover;
@@ -14,7 +19,7 @@ header{
 }
 
 header>h1 {
-    text-align: center;
+    margin-top: 2vh;
     text-transform: uppercase;
     font-size: xxx-large;
     color: #F3D22E;
@@ -22,62 +27,77 @@ header>h1 {
     text-shadow: red 2px 2px;
 }
 
-.home-title, .about-title, .contact-title {
+.titles {
+    font-size: x-large;
     text-align: center;
     color: white;
     background-color: rgb(249, 74, 41);
-    padding: 5px;
+    padding: 10px;
 }
 
 header>img {
-    position: absolute;
-    left: 45vw;
-    top: 8vh;
     filter: drop-shadow(4px 4px 8px);
 }
 
 nav {
-    display: block;
+    display: flex;
+    justify-content: end;
+    flex-wrap: nowrap;
+    align-items: center;
     text-align: center;
-    margin-top: 10px;
+    background-color: rgb(249, 74, 41);
 }
 
 nav>a {
-    border: 1px solid #999999;
-    background-color: rgb(214, 19, 85);
     color: white;
-    margin-left: 5px;
-    padding: 2px 5px 2px 5px;
+    padding: 5px 8px 5px 8px;
     text-decoration: none;
-    box-shadow: 2px 3px rgba(0, 0, 0, 0.5);
 }
 
-a:hover{
+a:hover {
     color: black;
-    background-color: rgb(252, 226, 42);
 }
 
 main {
-    display: inline-block;
+    display: flex;
+    justify-content: center;
+    margin-top: 5vh;
+}
 
-    margin-top: 3vh;
-    margin-left: 10vw;
+main::after {
+    content: "";
+    background: url(../img/Logo_Mighty_bg.png);
+    opacity: 0.2;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    position: fixed;
+    z-index: -1;
 }
 
 .home-info {
-    display: inline-block;
-    vertical-align: top;
-    margin-top: 20px;
-    width: 50vw;
+    display: flex;
+    flex-direction: row;
+    width: max-content;
+    background-color: white;
+    padding: 20px;
+    border: 5px solid coral;
+    border-radius: 10px;
 }
 
-section>p {
-    margin-bottom: 7vh;
+.home-info dl {
+    width: fit-content;
 }
 
-.home-figure, .about-figure, .contact-figure {
-    display: inline-block;
+.event-list dd {
+    margin-bottom: 40px;
+}
+
+.home-figure {
+    display: inline-flex;
     margin-left: 5vw;
+    align-items: center;
 }
 
 .about-info {
@@ -87,8 +107,16 @@ section>p {
     text-align: justify;
 }
 
+.about {
+    background-color: white;
+    margin-bottom: 5vh;
+    padding: 20px;
+    border: 5px solid coral;
+    border-radius: 10px;
+}
+
 .about-figure {
-    display: inline-block;
+    display: inline-flex;
     margin-left: 5vw;
 }
 
@@ -99,9 +127,143 @@ article>p {
 /*Contact Page*/
 
 .contact-info {
-    text-align:left;
-    display: inline-block;
-    margin-top: 20px;
-    vertical-align: top;
-    width: 50vw;
+    display: inline-flex;
+    align-items: center;
+    align-self: center;
+    background-color: white;
+    margin-bottom: 5vh;
+    padding: 20px;
+    border: 5px solid coral;
+    border-radius: 10px;
+}
+
+.contact-figure {
+    margin-left: 5vw;
+}
+
+.contact-info span {
+    font-weight: normal;
+    display: block;
+}
+
+/*Game Info*/
+
+.game-info {
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    margin-bottom: 5vh;
+    padding: 20px;
+    border: 5px solid coral;
+    border-radius: 10px;
+}
+
+.game-info>h2 {
+    text-align: center;
+}
+
+table {
+    border-spacing: 0;
+    margin-top: 5vh;
+}
+
+table>caption {
+    text-align: left;
+}
+
+th {
+    background-color: coral;
+    color: white;
+    font-weight: bolder;
+    padding: 3px;
+}
+
+td {
+    text-align: center;
+    padding: 5px;
+}
+
+.date {
+    font-weight: bolder;
+    border-bottom-style: solid;
+    border-bottom-color: coral;
+}
+
+tfoot>tr>td {
+    border-bottom-style: solid;
+    border-bottom-color: coral;
+}
+
+tr:nth-child(even) {
+    background-color: coral;
+}
+
+.additional-info {
+    margin-top: 5vh;
+    margin-bottom: 5vh;
+}
+
+.additional-info>p {
+    margin-bottom: 15px;
+}
+
+.contact-randall {
+    display: flex;
+    justify-content: space-between;
+}
+
+/*Rules*/
+
+.rules-info {
+    background-color: white;
+    margin-bottom: 5vh;
+    padding: 20px;
+    border: 5px solid coral;
+    border-radius: 10px;
+}
+
+.rules-info>h4 {
+    margin-bottom: 5vh;
+    text-align: center;
+}
+
+dl {
+    width: 65vw;
+}
+
+span {
+    font-weight: bolder;
+}
+
+dt {
+    font-weight: bolder;
+    margin-bottom: 10px;
+}
+
+dd {
+    text-align: justify;
+    margin-bottom: 10px;
+}
+
+li {
+    list-style-position: inside;
+}
+
+ul li {
+    list-style-type: disc;
+}
+
+ol li::marker {
+    color: coral;
+    font-weight: bold;
+}
+
+ul li::marker {
+    color: coral;
+}
+
+.alpha-list>li {
+    list-style-type: lower-alpha;
+    list-style-position: inside;
+    margin-left: 20px;
 }
