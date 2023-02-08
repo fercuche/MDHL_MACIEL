@@ -5,7 +5,7 @@
     font-family: Roboto, Oxygen, sans-serif
 }
 
-body{
+body {
     width: 100vw;
     height: 100vh;
 }
@@ -153,7 +153,7 @@ article>p {
 
 /*Game Info*/
 
-.gameinfo-main{
+.gameinfo-main {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -223,38 +223,42 @@ tr:nth-child(even) {
     justify-content: space-between;
 }
 
-.location-maps{
+.location-maps {
     display: flex;
     flex-direction: column;
-    width: 80%;
+    width: 88%;
     justify-content: center;
     margin-bottom: 5vh;
     background-color: white;
-    margin-bottom: 5vh;
-    padding: 20px;
+    padding: 10px;
     border: 5px solid coral;
     border-radius: 10px;
 }
 
-.location-maps>h2{
+.location-maps>h2 {
     text-align: center;
     padding: 20px;
 }
 
-.location-cards{
+.location-cards {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    gap: 1rem;   
+    gap: 1rem;
 }
 
-.card{
+.card {
     text-align: center;
 }
 
-iframe{
+.card>div>h4 {
+    margin-bottom: 10px;
+}
+
+iframe {
     border-radius: 2rem;
 }
+
 /*Rules*/
 
 .rules-info {
@@ -312,16 +316,141 @@ ul li::marker {
 }
 
 /*Registration Form*/
+.registration-form {
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    justify-content: center;
+    margin-bottom: 5vh;
+    background-color: white;
+    padding: 20px;
+    border: 5px solid coral;
+    border-radius: 10px;
+}
 
+fieldset {
+    border: none;
+    margin-bottom: 20px;
+}
+
+legend {
+    font-weight: bold;
+    color: coral;
+    padding-bottom: 5px;
+}
+
+label {
+    display: inline-block;
+    margin-right: 10px;
+}
+
+input {
+    vertical-align: middle;
+}
+
+select {
+    padding: 5px;
+}
+
+input[type=text] {
+    padding: 5px 10px;
+    margin-bottom: 10px;
+}
+
+.submit-button {
+    display: flex;
+    justify-content: center;
+}
+
+input[type=submit] {
+    font-weight: bolder;
+    font-size: larger;
+    background-color: coral;
+    color: white;
+    width: 10%;
+    height: 4vh;
+    cursor: pointer;
+    border-radius: 20px;
+}
+
+input[type=submit]:hover {
+    background-color: #ff2a00;
+}
+
+.signature {
+    margin-top: 3vh;
+    display: flex;
+    flex-direction: column;
+}
 
 
 /*Feedback Info*/
-.table-feedback{
+.table-feedback {
     display: flex;
     justify-content: center;
     margin-bottom: 5vh;
 }
-.table-feedback>table>caption{
+
+.table-feedback>table>caption {
     text-align: center;
     margin-bottom: 10px;
+}
+
+/*Media Queries*/
+
+@media screen and (max-width:768px) {
+    nav {
+        justify-content: center;
+    }
+
+    header {
+        height: 22vh;
+    }
+
+    header>h1 {
+        text-align: center;
+    }
+
+    .home-info {
+        flex-direction: column;
+    }
+
+    .home-figure {
+        justify-content: center;
+    }
+
+    input[type=submit] {
+        width: 20%;
+
+    }
+}
+
+
+@media screen and (max-width:375px) {
+    nav {
+        justify-content: center;
+        flex-direction: column;
+    }
+
+    header {
+        height: 22vh;
+    }
+
+    header>h1 {
+        text-align: center;
+        font-size: xx-large;
+    }
+
+    .home-info {
+        flex-direction: column;
+    }
+
+    .home-figure {
+        justify-content: center;
+    }
+
+    input[type=submit] {
+        width: 20%;
+    }
+
 }
